@@ -61,6 +61,7 @@ bool introPlayed = false;
 bool playIntro = true;
 
 // --- Anger Animation ---
+bool accelInitialized = false;
 bool playAnger = false;
 bool angerReverse = false;
 int touchCount = 0;
@@ -68,7 +69,7 @@ unsigned long firstTouchTime = 0;
 const unsigned long touchBurstWindow = 3000;
 const int touchThreshold = 10;
 float lastAccelMagnitude = 0;
-const float spikeThreshold = 6.0;
+const float spikeThreshold = 8.0;
 
 const unsigned char blink_60[] PROGMEM = {
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -22794,19 +22795,28 @@ void loop()
         a.acceleration.x * a.acceleration.x +
         a.acceleration.y * a.acceleration.y +
         a.acceleration.z * a.acceleration.z);
-    float delta = abs(currentAccelMagnitude - lastAccelMagnitude);
-    if (delta > spikeThreshold)
+
+    if (!accelInitialized)
     {
-        Serial.println("Acceleration spike detected!");
-        playAnger = true;
-        angerReverse = false;
-        frame = 0;
-        playEpd = false;
-        playAwake = false;
-        touchCount = 0;
-        return;
+        lastAccelMagnitude = currentAccelMagnitude;
+        accelInitialized = true;
     }
-    lastAccelMagnitude = currentAccelMagnitude;
+    else
+    {
+        float delta = abs(currentAccelMagnitude - lastAccelMagnitude);
+        if (delta > spikeThreshold)
+        {
+            Serial.println("Acceleration spike detected!");
+            playAnger = true;
+            angerReverse = false;
+            frame = 0;
+            playEpd = false;
+            playAwake = false;
+            touchCount = 0;
+            return;
+        }
+        lastAccelMagnitude = currentAccelMagnitude;
+    }
 
     // --- Idle Detection ---
     float yMovementThreshold = 0.2;
