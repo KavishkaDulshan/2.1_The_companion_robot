@@ -42,15 +42,15 @@ unsigned long blinkPauseStartTime = 0;
 bool reverseTransition = false;
 
 // --- Animation Arrays ---
-extern const unsigned char *blink_allArray[];
+extern const unsigned char *blink_allArray[]; // blink animation/ idle animathin
 extern const int blink_allArray_LEN;
-extern const unsigned char *lookleftallArray[];
+extern const unsigned char *lookleftallArray[]; // look left animation
 extern const int lookleftallArray_LEN;
-extern const unsigned char *lookrightallArray[];
+extern const unsigned char *lookrightallArray[]; // look right animation
 extern const int lookrightallArray_LEN;
-extern const unsigned char *epd_bitmap_allArray[];
+extern const unsigned char *epd_bitmap_allArray[]; // sleep anmation
 extern const int epd_bitmap_allArray_LEN;
-extern const unsigned char *awakeallArray[];
+extern const unsigned char *awakeallArray[]; // awake animation
 extern const int awakeallArray_LEN;
 
 bool introPlayed = false;
