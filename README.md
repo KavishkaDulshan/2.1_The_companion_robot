@@ -1,2 +1,1 @@
-# Table-robot
-this is an ESP32 based table robot...
+# 2.1_The_companion_robot
