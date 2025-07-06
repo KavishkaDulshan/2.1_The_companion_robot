@@ -40,19 +40,19 @@ Diagram drawn with wokwi online emulator (https://wokwi.com/projects/43575861741
 You should connect all the components as above diagram. with correct pins.
 
 MPU6050 
-SCL ==> 22
-SDA ==> 21
-VCC ==> 5V
-GND ==> Any GND pin in ESP32
+SCL ==> 22  |
+SDA ==> 21  |
+VCC ==> 5V  |
+GND ==> Any GND pin in ESP32    |
 
 OLED Display
-SCL ==> 22
-SDA ==> 21
-VCC ==> 5V
-GND ==> Any GND pin in ESP32
+SCL ==> 22  |
+SDA ==> 21  |
+VCC ==> 5V  |
+GND ==> Any GND pin in ESP32    |
 
 Touch Sensor
-SIG ==> GPIO 18
-VCC ==> 3V
-GND ==> Any GND pin in ESP32
+SIG ==> GPIO 18 |
+VCC ==> 3V  |
+GND ==> Any GND pin in ESP32    |
 
