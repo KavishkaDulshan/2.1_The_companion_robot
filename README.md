@@ -6,6 +6,9 @@ There are  lots of companion robots out there with impressive features and lates
 
 I created this with very simple and minimal resources that everyone can easily find with very low cost. All the components are available in famouse e-commerce websites for very low prices. Therefor I thins It is very easy to make your own *2.1* without much effort.
 
+https://github.com/user-attachments/assets/388a6fea-129f-4372-ae87-fc4299581075
+
+
 # Required Components
 
 # ESP32 Board
@@ -39,20 +42,54 @@ Diagram drawn with wokwi online emulator (https://wokwi.com/projects/43575861741
 
 You should connect all the components as above diagram. with correct pins.
 
-MPU6050 
+MPU6050 ===>
 SCL ==> 22  |
 SDA ==> 21  |
 VCC ==> 5V  |
 GND ==> Any GND pin in ESP32    |
 
-OLED Display
+OLED Display ===>
 SCL ==> 22  |
 SDA ==> 21  |
 VCC ==> 5V  |
 GND ==> Any GND pin in ESP32    |
 
-Touch Sensor
+Touch Sensor ===>
 SIG ==> GPIO 18 |
 VCC ==> 3V  |
 GND ==> Any GND pin in ESP32    |
+![IMG_5422](https://github.com/user-attachments/assets/98d044b0-0a51-4d89-a043-c63471f4657c)
 
+
+# Setup arduino IDE with ESP32 and install relevent libraries
+
+Now you should add ESP32 boards to your Arduino IDE because they are not available in Arduino IDE bydefault. I am not going to explain each and every step here because it is really easy to add them with a freely available YouTube tutorial online.
+
+After adding ESP32 boards to your Arduino IDE you can import V_1.6_smooth_animation.ino file or V_1.7_optimized.ino file to your IDE and install required libraries to your IDE easily. Then you can compile the code and upload it in to your ESP32 board via a micro usb cable.(refera a youtube tutorials if face an any difficulties during adding ESP32 boards in to IDE or installing libraries).
+
+# Difference between V_1.6_smooth_animation.ino and V_1.7_optimized.ino
+
+Simply the main difference between V_1.6 vs V_1.7 is code size and animation smoothness.
+If you prefer a butter smooth animation but doesn't matter it takes a large amount of your ESP32 flash space you can go with V_1.6 because it has smooth animations. But there is a littlebit space for futher improvements and adding new features.
+
+If you go with V_1.7 you can have a optimized animations for smaller storage compared to the V_1.6. if you go with V_1.7 you will have more memory to do improvements and implement new animations or features. But some animations are not smooth as previous version code. It is upto you. You can try both and decide.
+
+# Tools I used to this project
+*Rive*(https://rive.app/) - This web application is used to animate all the animations in this project. You can use this for free to animate your animations.
+
+*image2cpp*(https://javl.github.io/image2cpp/) - This web site is use to convert PNG to C++ code or bit maps which are generated from RIVE. This also a free to use.
+*Arduino IDE*
+*Vscode*
+*Github*
+*ChatGPT*
+*Perplexity*
+*DeepSeek*
+
+I get a lot of help form AI tools to generate this complex code and fix bugs and errors.
+
+# Sources I used for this project
+I used YouTube tutorials and several websites for understand basics of these electronics.
+https://wokwi.com/
+https://www.espressif.com/en
+https://randomnerdtutorials.com/
+https://www.youtube.com/@upir_upir
