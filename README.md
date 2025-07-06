@@ -78,11 +78,17 @@ If you go with V_1.7 you can have a optimized animations for smaller storage com
 *Rive*(https://rive.app/) - This web application is used to animate all the animations in this project. You can use this for free to animate your animations.
 
 *image2cpp*(https://javl.github.io/image2cpp/) - This web site is use to convert PNG to C++ code or bit maps which are generated from RIVE. This also a free to use.
+
 *Arduino IDE*
+
 *Vscode*
+
 *Github*
+
 *ChatGPT*
+
 *Perplexity*
+
 *DeepSeek*
 
 I get a lot of help form AI tools to generate this complex code and fix bugs and errors.
