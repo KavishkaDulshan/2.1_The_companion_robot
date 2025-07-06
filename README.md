@@ -8,5 +8,11 @@ I created this with very simple and minimal resources that everyone can easily f
 
 # Required Components
 
-ESP32 Board
+# ESP32 Board
 ![WhatsApp Image 2025-07-07 at 12 19 59 AM](https://github.com/user-attachments/assets/704bee46-c229-4599-90ab-d776ff340b61)
+
+This is the main component that handle all processing tasks and act as the brain of our 2.1.
+I prefer ESP32 over Arduino uno because this has builtin WIFI, bloototh capabilities and higher memory with higher processing capability.
+
+# SSD1306 I2C  128 x 64 OLED display
+
