@@ -9,3 +9,4 @@ I created this with very simple and minimal resources that everyone can easily f
 # Required Components
 
 ESP32 Board
+![WhatsApp Image 2025-07-07 at 12 19 59 AM](https://github.com/user-attachments/assets/704bee46-c229-4599-90ab-d776ff340b61)
