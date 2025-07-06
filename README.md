@@ -28,3 +28,31 @@ I am using this sensor module to detect 2.1's movements and change it's expressi
 ![WhatsApp Image 2025-07-07 at 12 20 00 AM](https://github.com/user-attachments/assets/cba33374-6b3a-41de-b196-ac086b0cd638)
 
 I am using this touch sensor for directly interact with 2.1. We can give different commands by touches with this sensor. It detects touches and we can communicate with our robot easily with it.
+
+# How to setup
+
+Now we have to interconnect all the components we collected and make the final setup for our prototype of 2.1. It is very easy to do with a bread board and some jumper wiers.
+
+*setup diagram*
+![image](https://github.com/user-attachments/assets/0e837429-9eb0-43e4-9da3-3fd69a3081f9)
+Diagram drawn with wokwi online emulator (https://wokwi.com/projects/435758617419686913)
+
+You should connect all the components as above diagram. with correct pins.
+
+MPU6050 
+SCL ==> 22
+SDA ==> 21
+VCC ==> 5V
+GND ==> Any GND pin in ESP32
+
+OLED Display
+SCL ==> 22
+SDA ==> 21
+VCC ==> 5V
+GND ==> Any GND pin in ESP32
+
+Touch Sensor
+SIG ==> GPIO 18
+VCC ==> 3V
+GND ==> Any GND pin in ESP32
+
