@@ -42,22 +42,35 @@ Diagram drawn with wokwi online emulator (https://wokwi.com/projects/43575861741
 
 You should connect all the components as above diagram. with correct pins.
 
-MPU6050 ===>
+MPU6050
+
 SCL ==> 22  |
+
 SDA ==> 21  |
+
 VCC ==> 5V  |
+
 GND ==> Any GND pin in ESP32    |
 
-OLED Display ===>
+
+OLED Display
+
 SCL ==> 22  |
+
 SDA ==> 21  |
+
 VCC ==> 5V  |
+
 GND ==> Any GND pin in ESP32    |
 
-Touch Sensor ===>
+Touch Sensor
+
 SIG ==> GPIO 18 |
+
 VCC ==> 3V  |
+
 GND ==> Any GND pin in ESP32    |
+
 ![IMG_5422](https://github.com/user-attachments/assets/98d044b0-0a51-4d89-a043-c63471f4657c)
 
 
@@ -94,8 +107,13 @@ If you go with V_1.7 you can have a optimized animations for smaller storage com
 I get a lot of help form AI tools to generate this complex code and fix bugs and errors.
 
 # Sources I used for this project
+
 I used YouTube tutorials and several websites for understand basics of these electronics.
+
 https://wokwi.com/
+
 https://www.espressif.com/en
+
 https://randomnerdtutorials.com/
+
 https://www.youtube.com/@upir_upir
