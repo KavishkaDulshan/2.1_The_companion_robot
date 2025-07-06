@@ -87,7 +87,7 @@ If you prefer a butter smooth animation but doesn't matter it takes a large amou
 
 If you go with V_1.7 you can have a optimized animations for smaller storage compared to the V_1.6. if you go with V_1.7 you will have more memory to do improvements and implement new animations or features. But some animations are not smooth as previous version code. It is upto you. You can try both and decide.
 
-# Tools I used to this project
+# Tools I used for this project
 *Rive*(https://rive.app/) - This web application is used to animate all the animations in this project. You can use this for free to animate your animations.
 
 *image2cpp*(https://javl.github.io/image2cpp/) - This web site is use to convert PNG to C++ code or bit maps which are generated from RIVE. This also a free to use.
