@@ -15,7 +15,7 @@ int lastState = LOW;
 int currentState;
 bool isIdleMode = false;
 
-bool epdDone = false;  // Whether the epd animation has completed
+bool epdDone = false;  
 unsigned long previousFrameTime = 0;
 int frame = 0;
 unsigned long pauseStartTime = 0;
@@ -27,12 +27,12 @@ bool sensorReleased = false;
 bool blinkPaused = false;
 unsigned long blinkPauseStartTime = 0;
 
-const int frameInterval = 0;  // ms between frames
+const int frameInterval = 0;  
 
 bool isWakingUp = false;
 bool isTouchHeld = false;
 unsigned long touchStartTime = 0;
-const unsigned long holdThreshold = 5000; // 5 seconds
+const unsigned long holdThreshold = 3000; 
 
 enum TiltState { TILT_NONE, TILT_LEFT, TILT_RIGHT };
 TiltState currentTilt = TILT_NONE;
